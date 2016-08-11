@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#2d2a32">
+
+    <RelativeLayout
+        android:id="@+id/main_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:background="@drawable/main_fragment_bg"
+        android:orientation="vertical">
+
+        <Switch
+            android:id="@+id/cache_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_above="@id/cache_switch"
+            android:text="开启这个选项，您在WIFI环境下阅读的时候，会自动下载您阅读的文章，方便您在没有网络的时候离线阅读" />
+    </RelativeLayout>
+</RelativeLayout>
