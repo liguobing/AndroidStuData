@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#2d2a32">
+
+    <LinearLayout
+        android:id="@+id/main_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:background="@drawable/main_fragment_bg"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:src="@mipmap/about_logo" />
+
+        <TextView
+            android:id="@+id/tv_version"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="#F8F8FF" />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="3dp"
+            android:layout_margin="10dp"
+            android:text="\t\t\t\t应用中所展示的博文一部分来自互联网，一部分是我在自学时写的，纯粹为了方便在手机上集中阅读，如果我侵犯到了您的权益，可以联系我，我会将之删除\n我的QQ：29418290\n我的邮箱：ligb88@foxmail.com"
+            android:textColor="#F8F8FF" />
+    </LinearLayout>
+</RelativeLayout>
