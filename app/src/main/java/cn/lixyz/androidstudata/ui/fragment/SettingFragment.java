@@ -1,14 +1,11 @@
 package cn.lixyz.androidstudata.ui.fragment;
 
 import android.app.Fragment;
-import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
-import android.os.Environment;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -34,11 +31,8 @@ import java.util.List;
 import cn.lixyz.androidstudata.R;
 import cn.lixyz.androidstudata.adapter.AdapterForSetting;
 import cn.lixyz.androidstudata.ui.activity.AboutActivity;
-import cn.lixyz.androidstudata.ui.activity.BindAccountActivity;
 import cn.lixyz.androidstudata.ui.activity.CollectActivity;
 import cn.lixyz.androidstudata.ui.activity.FeedbackActivity;
-import cn.lixyz.androidstudata.ui.activity.UpdateActivity;
-import cn.lixyz.androidstudata.ui.activity.UploadFileActivity;
 import cn.lixyz.androidstudata.ui.activity.WIFIAutoCacheActivity;
 
 /**

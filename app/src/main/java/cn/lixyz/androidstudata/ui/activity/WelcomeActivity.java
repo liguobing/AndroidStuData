@@ -13,9 +13,11 @@ import android.view.Window;
 import android.view.WindowManager;
 
 import com.avos.avoscloud.AVException;
+import com.avos.avoscloud.AVInstallation;
 import com.avos.avoscloud.AVObject;
 import com.avos.avoscloud.AVQuery;
 import com.avos.avoscloud.FindCallback;
+import com.avos.avoscloud.PushService;
 import com.mmga.metroloading.MetroLoadingView;
 
 import java.util.List;
@@ -59,6 +61,11 @@ public class WelcomeActivity extends BasisActivity {
             androidReady = true;
             handler.sendEmptyMessage(3);
         }
+
+        //保存 Installation，用于推送消息
+        AVInstallation.getCurrentInstallation().saveInBackground();
+        //点击推送消息，跳转到主界面
+        PushService.setDefaultPushCallback(this, MainActivity.class);
 
         //开始动画
         mLoading = (MetroLoadingView) findViewById(R.id.loading);
