@@ -325,8 +325,8 @@ public class Util {
 			FileInputStream stream = new FileInputStream(new File(path + "test.jpg"));
 			BitmapFactory.Options opts = new BitmapFactory.Options();
 			opts.inSampleSize = 8;
-			opts.inPurgeable = true;
-			opts.inInputShareable = true;
+//			opts.inPurgeable = true;
+//			opts.inInputShareable = true;
 			Bitmap bitmap = BitmapFactory.decodeStream(stream, null, opts);
 			return bitmap;
 		} catch (OutOfMemoryError e) {

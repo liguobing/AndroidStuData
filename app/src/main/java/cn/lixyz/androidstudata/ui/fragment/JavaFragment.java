@@ -1,6 +1,6 @@
 package cn.lixyz.androidstudata.ui.fragment;
 
-import android.content.Context;
+import android.app.Fragment;
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
@@ -18,14 +18,13 @@ import java.util.List;
 
 import cn.lixyz.androidstudata.R;
 import cn.lixyz.androidstudata.adapter.AdapterForFragmentListView;
-import cn.lixyz.androidstudata.basis.BasisFragment;
 import cn.lixyz.androidstudata.db.BasisSQLiteOpenHelper;
 import cn.lixyz.androidstudata.ui.activity.CategoryActivity;
 
 /**
  * Created by LGB on 2016/4/28.
  */
-public class JavaFragment extends BasisFragment implements AdapterView.OnItemClickListener {
+public class JavaFragment extends Fragment implements AdapterView.OnItemClickListener {
 
     private SQLiteOpenHelper openHelper;
     private SQLiteDatabase database;

@@ -1,5 +1,4 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#B0E2FF">
@@ -19,24 +18,6 @@
         android:layout_below="@id/img"
         android:layout_centerInParent="true"
         android:layout_marginTop="10dp"
-        android:text="正在为您加载基础数据，请稍后..." />
-
-    <TextView
-        android:id="@+id/text2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/tv_text"
-        android:layout_centerInParent="true"
-        android:layout_marginTop="10dp"
-        android:text="受网速影响，首次进入时间也许会长一些" />
-
-    <com.mmga.metroloading.MetroLoadingView
-        android:id="@+id/loading"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/text2"
-        app:indicator_height="9dp"
-        app:indicator_width="4dp"
-        app:transform_color="#ee00ff" />
+        android:text="正在为您加载基础数据，请稍候...\n  受网速影响，首次进入时间也许会长一些" />
 
 </RelativeLayout>

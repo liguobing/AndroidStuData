@@ -24,7 +24,7 @@ public class AdapterForSetting extends BaseAdapter {
 
     }
 
-    public AdapterForSetting(Context context, List list) {
+    public AdapterForSetting(Context context, List<String> list) {
         mContext = context;
         mList = list;
     }

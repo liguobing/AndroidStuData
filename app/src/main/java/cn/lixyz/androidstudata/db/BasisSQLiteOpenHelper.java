@@ -22,7 +22,8 @@ public class BasisSQLiteOpenHelper extends SQLiteOpenHelper {
             "isCollect text," +  //是否收藏
             "LocalFileID text," + //本地文件ID(用户载入本地文件和判断是否已经下载)
             "collectTime text," + //收藏时间
-            "updateTime text)";   //最后一次更新时间
+            "updateTime text," +//最后一次更新时间
+            "updateVersion integer)";//更新版本，用于下拉刷新时做更新
 
     public static String CREATE_JAVA_TABLE = "create table if not exists Java(" +
             "_id integer primary key autoincrement," +
@@ -37,7 +38,8 @@ public class BasisSQLiteOpenHelper extends SQLiteOpenHelper {
             "isCollect text," +  //是否收藏
             "LocalFileID text," + //本地文件ID(用户载入本地文件和判断是否已经下载)
             "collectTime text," + //收藏时间
-            "updateTime text)";   //最后一次更新时间
+            "updateTime text," + //最后一次更新时间
+            "updateVersion integer)";  //更新版本，用于下拉刷新时做更新
 
 
     public BasisSQLiteOpenHelper(Context context, String name, SQLiteDatabase.CursorFactory factory, int version) {

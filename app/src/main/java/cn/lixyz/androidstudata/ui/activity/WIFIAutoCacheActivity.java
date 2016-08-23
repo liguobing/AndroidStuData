@@ -1,20 +1,17 @@
 package cn.lixyz.androidstudata.ui.activity;
 
+import android.app.Activity;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.widget.CompoundButton;
-import android.widget.ImageView;
-import android.widget.RelativeLayout;
 import android.widget.Switch;
-import android.widget.TextView;
 
 import cn.lixyz.androidstudata.R;
-import cn.lixyz.androidstudata.basis.BasisActivity;
 
 /**
  * Created by LGB on 2016/5/13.
  */
-public class WIFIAutoCacheActivity extends BasisActivity {
+public class WIFIAutoCacheActivity extends Activity {
 
     private Switch cache_switch;
     private SharedPreferences sharedPreferences;

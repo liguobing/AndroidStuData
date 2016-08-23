@@ -7,9 +7,10 @@ android {
     defaultConfig {
         applicationId "cn.lixyz.androidstudata"
         minSdkVersion 19
-        targetSdkVersion 23
+        targetSdkVersion 19
         versionCode 1
         versionName "1.0"
+        multiDexEnabled true
     }
     buildTypes {
         release {
@@ -22,6 +23,9 @@ android {
         main {
             jniLibs.srcDirs = ['libs']
         }
+    }
+    tasks.withType(JavaCompile) {
+        options.compilerArgs << "-Xlint:unchecked"
     }
 }
 
@@ -36,7 +40,6 @@ dependencies {
     compile files('libs/okio-1.6.0-leancloud.jar')
     compile 'com.mmga.metroloading:metroloading:1.0.0'
     compile files('libs/weiboSDKCore_3.1.4.jar')
-    compile files('libs/avoscloud-sdk-v3.13.11.jar')
     compile files('libs/mta-sdk-1.6.2.jar')
     compile files('libs/open_sdk_r5509.jar')
     compile files('libs/libammsdk.jar')
@@ -47,4 +50,5 @@ dependencies {
     compile files('libs/avoscloud-sdk-v3.14.2.jar')
     compile files('libs/Java-WebSocket-1.3.2-leancloud.jar')
     compile files('libs/protobuf-java-2.6.1.jar')
+    compile 'com.orhanobut:logger:1.15'
 }

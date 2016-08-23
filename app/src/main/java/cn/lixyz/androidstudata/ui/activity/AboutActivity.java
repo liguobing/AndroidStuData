@@ -1,18 +1,17 @@
 package cn.lixyz.androidstudata.ui.activity;
 
-import android.content.pm.PackageInfo;
+import android.app.Activity;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.widget.TextView;
 
 import cn.lixyz.androidstudata.R;
-import cn.lixyz.androidstudata.basis.BasisActivity;
 
 /**
  * “关于”界面
  * Created by LGB on 2016/5/13.
  */
-public class AboutActivity extends BasisActivity {
+public class AboutActivity extends Activity {
 
     private TextView tv_version;
 

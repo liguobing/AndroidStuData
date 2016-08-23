@@ -5,24 +5,21 @@
     android:background="#2d2a32"
     android:orientation="vertical">
 
-    <LinearLayout
-        android:id="@+id/main_root"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_margin="10dp"
-        android:layout_weight="9"
-        android:background="@drawable/main_fragment_bg"></LinearLayout>
+        <LinearLayout
+            android:id="@+id/main_root"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="10dp"
+            android:layout_weight="9"
+            android:background="@drawable/main_fragment_bg"></LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_alignParentBottom="true"
         android:layout_marginTop="5dp"
         android:layout_weight="1"
         android:background="#877f7f"
-        android:gravity="center"
-        app:layout_heightPercent="10%"
-        app:layout_widthPercent="100%">
+        android:gravity="center">
 
         <ImageView
             android:id="@+id/bt_android"

@@ -1,5 +1,6 @@
 package cn.lixyz.androidstudata.ui.activity;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -11,19 +12,15 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.alibaba.fastjson.JSONObject;
 import com.sina.weibo.sdk.auth.AuthInfo;
 import com.sina.weibo.sdk.auth.Oauth2AccessToken;
 import com.sina.weibo.sdk.auth.WeiboAuthListener;
 import com.sina.weibo.sdk.auth.sso.SsoHandler;
 import com.sina.weibo.sdk.exception.WeiboException;
 import com.sina.weibo.sdk.net.RequestListener;
-import com.tencent.tauth.IUiListener;
 import com.tencent.tauth.Tencent;
-import com.tencent.tauth.UiError;
 
 import cn.lixyz.androidstudata.R;
-import cn.lixyz.androidstudata.basis.BasisActivity;
 import cn.lixyz.androidstudata.sinaweibo.AccessTokenKeeper;
 import cn.lixyz.androidstudata.sinaweibo.Constants;
 import cn.lixyz.androidstudata.sinaweibo.User;
@@ -34,7 +31,7 @@ import cn.lixyz.androidstudata.sinaweibo.UsersAPI;
  * 绑定账户界面
  * Created by LGB on 2016/5/13.
  */
-public class BindAccountActivity extends BasisActivity implements View.OnClickListener {
+public class BindAccountActivity extends Activity implements View.OnClickListener {
 
     private ImageButton ib_weibo, ib_qq, ib_wechat;
     private TextView tv_weibo_name, tv_exit_weibo, tv_wechat_name, tv_exit_wechat, tv_qq_name, tv_exit_qq;

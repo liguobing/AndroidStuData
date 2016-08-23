@@ -1,7 +1,7 @@
 package cn.lixyz.androidstudata.ui.activity;
 
+import android.app.Activity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -12,13 +12,12 @@ import com.avos.avoscloud.AVObject;
 import com.avos.avoscloud.SaveCallback;
 
 import cn.lixyz.androidstudata.R;
-import cn.lixyz.androidstudata.basis.BasisActivity;
 
 /**
  * 意见反馈界面
  * Created by LGB on 2016/5/13.
  */
-public class FeedbackActivity extends BasisActivity {
+public class FeedbackActivity extends Activity {
 
     private EditText et_feedback_contact, et_feedback_content;
     private Button bt_submit;

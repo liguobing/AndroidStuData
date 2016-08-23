@@ -1,5 +1,6 @@
 package cn.lixyz.androidstudata.ui.activity;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
@@ -14,7 +15,6 @@ import java.util.List;
 
 import cn.lixyz.androidstudata.R;
 import cn.lixyz.androidstudata.adapter.AdapterForCollectListView;
-import cn.lixyz.androidstudata.basis.BasisActivity;
 import cn.lixyz.androidstudata.bean.CollectFileBean;
 import cn.lixyz.androidstudata.db.BasisSQLiteOpenHelper;
 
@@ -22,7 +22,7 @@ import cn.lixyz.androidstudata.db.BasisSQLiteOpenHelper;
  * 收藏界面
  * Created by LGB on 2016/5/13.
  */
-public class CollectActivity extends BasisActivity {
+public class CollectActivity extends Activity {
 
     private List<CollectFileBean> list = new ArrayList<CollectFileBean>();
 

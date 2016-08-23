@@ -49,12 +49,12 @@ public class ShareActivity extends Activity implements View.OnClickListener {
 
     //QQ  QQZONE
     public static Tencent mTencent;
-    public static String mAppid = "1105329091";
+    public static String mAppid = "1115329091";
     private static boolean isServerSideLogin = false;
     public static final int SHARE_TO_QQ_TYPE_DEFAULT = 1;
 
     //微信
-    private static final String APP_ID = "wx07fbff1c7c8f3cd0";
+    private static final String APP_ID = "wx17fbff1c7c8f3cd0";
     private IWXAPI api;
 
     private String fileName, fileURL;
@@ -122,7 +122,7 @@ public class ShareActivity extends Activity implements View.OnClickListener {
      */
     private void shareWebPageToQQZone() {
         Bundle qqZoneParams = new Bundle();
-        ArrayList imageUrls = new ArrayList();
+        ArrayList<String> imageUrls = new ArrayList<String>(); //========================
         imageUrls.add("http://ww3.sinaimg.cn/mw1024/98e0fbbdgw1f3xww21z2jj201t01tq2r.jpg");
         qqZoneParams.putString(QzoneShare.SHARE_TO_QQ_TITLE, fileName);//必填
         qqZoneParams.putString(QzoneShare.SHARE_TO_QQ_SUMMARY, "一个分享Android笔记的APP");//选填

@@ -1,5 +1,6 @@
 package cn.lixyz.androidstudata.ui.activity;
 
+import android.app.Activity;
 import android.content.ContentValues;
 import android.content.Context;
 import android.content.Intent;
@@ -9,7 +10,6 @@ import android.net.wifi.WifiManager;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
-import android.util.Log;
 import android.view.View;
 import android.webkit.WebView;
 import android.widget.AdapterView;
@@ -21,7 +21,6 @@ import com.avos.avoscloud.AVException;
 import com.avos.avoscloud.AVFile;
 import com.avos.avoscloud.GetDataCallback;
 import com.avos.avoscloud.ProgressCallback;
-import com.avos.avoscloud.okhttp.internal.framed.FrameReader;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -33,14 +32,13 @@ import java.util.List;
 
 import cn.lixyz.androidstudata.R;
 import cn.lixyz.androidstudata.adapter.AdapterForListViewMenu;
-import cn.lixyz.androidstudata.basis.BasisActivity;
 import cn.lixyz.androidstudata.bean.ShowFileBean;
 import cn.lixyz.androidstudata.db.BasisSQLiteOpenHelper;
 
 /**
  * Created by LGB on 2016/5/4.
  */
-public class ShowContentActivity extends BasisActivity implements AdapterView.OnItemClickListener {
+public class ShowContentActivity extends Activity implements AdapterView.OnItemClickListener {
 
     private WebView wv_show;
     private ListView lv_menu;
