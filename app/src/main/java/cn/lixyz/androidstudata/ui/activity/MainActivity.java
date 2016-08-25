@@ -41,9 +41,6 @@ public class MainActivity extends Activity {
         //保存 Installation，用于推送消息
         AVInstallation.getCurrentInstallation().saveInBackground();
 
-        //点击推送消息，跳转到主界面
-        PushService.setDefaultPushCallback(this, MainActivity.class);
-
         //将手机信息存入云端，以便查看用户机型分布
         AVQuery<AVObject> query = new AVQuery<>("PhoneInfo");
         query.whereEqualTo("InstallationID", AVInstallation.getCurrentInstallation().getInstallationId());

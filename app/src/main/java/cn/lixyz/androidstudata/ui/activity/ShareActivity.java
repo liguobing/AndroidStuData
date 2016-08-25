@@ -54,7 +54,7 @@ public class ShareActivity extends Activity implements View.OnClickListener {
     public static final int SHARE_TO_QQ_TYPE_DEFAULT = 1;
 
     //微信
-    private static final String APP_ID = "wx17fbff1c7c8f3cd0";
+    private static final String APP_ID = "wx07fbff1c7c8f3cd0";
     private IWXAPI api;
 
     private String fileName, fileURL;

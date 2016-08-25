@@ -63,7 +63,7 @@ public class WelcomeActivity extends Activity {
         setContentView(R.layout.activity_welcome);
 
         //云key
-        AVOSCloud.initialize(this, "Au0HvDfl8tAFViLQPYmXvIcX-gzGzoHsz", "67SNck7cGavK4yKAqIB3ThaP");
+        AVOSCloud.initialize(this, "67SNck7cGavK4yKAqIB3ThaP-gzGzoHsz", "Au0HvDfl8tAFViLQPYmXvIcX");
 
         //获取权限
         if (Build.VERSION.SDK_INT >= 23) {
